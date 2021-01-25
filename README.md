@@ -17,6 +17,12 @@ To check that your contract compiles correctly:
 
 To deploy your contract to the XDai chain (make sure to have ran the __Do once__ steps)
 - `yarn deploy`
+- Copy the contract address somewhere
+
+To use your contract in the Dark Forest client with a plugin
+- Upload the `./ContractABI.json` file generated when deploying the contract to GithubGist/CDN/S3/Whatever
+- Use `df.loadContract(ContractAddres, ABIUrl)` in your plugin to get an interface to your contract
 
 ## Example usage
 An example achievement contract can be found in `./contracts/Contract.sol`. It is an ERC721 implementation of a simple achievement system. This contrat calls the Dark Forest core contract to verify the claim of the users requesting an achievement.
+An example plugin interacting with this contract can be found in `./example/plugin.js`

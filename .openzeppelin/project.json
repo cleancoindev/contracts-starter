@@ -4,7 +4,7 @@
     "Contract": "Contract"
   },
   "dependencies": {},
-  "name": "df-plugin-starter-repo",
+  "name": "contracts-starter",
   "version": "1.0.0",
   "compiler": {
     "compilerSettings": {
