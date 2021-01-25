@@ -5,7 +5,7 @@ import HDWalletProvider from "@truffle/hdwallet-provider";
 const rawExec = util.promisify(require("child_process").exec);
 
 require("dotenv").config({
-  path: ".env.example"
+  path: ".env"
 });
 
 
