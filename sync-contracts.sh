@@ -1,0 +1,15 @@
+function sync() {
+    wget "https://raw.githubusercontent.com/darkforest-eth/eth/master/contracts/$1.sol"
+    mv "$1.sol" "./contracts/$1.sol"
+}
+sync "DarkForestCore"
+sync "DarkForestTypes"
+sync "Verifier"
+sync "DarkForestStorageV1"
+sync "DarkForestTokens"
+sync "DarkForestUtils"
+sync "DarkForestPlanet"
+sync "DarkForestLazyUpdate"
+sync "DarkForestInitialize"
+sync "Whitelist"
+sync "ABDKMath64x64"

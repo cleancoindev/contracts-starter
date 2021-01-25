@@ -1,0 +1,8 @@
+node_modules/
+build/
+contracts/DarkForest*
+contracts/Verifier.sol
+contracts/Whitelist.sol
+contracts/ABDKMath64x64.sol
+.openzeppelin/.session
+.env

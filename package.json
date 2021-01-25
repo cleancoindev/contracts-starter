@@ -1,0 +1,36 @@
+{
+  "name": "df-plugin-starter-repo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Justin Glibert <justin@glibert.io>",
+  "license": "MIT",
+  "devDependencies": {
+    "@openzeppelin/cli": "^2.8.2",
+    "@openzeppelin/contracts-upgradeable": "^3.3.0",
+    "@openzeppelin/test-environment": "^0.1.4",
+    "@openzeppelin/test-helpers": "^0.5.6",
+    "@truffle/hdwallet-provider": "^1.0.40",
+    "@types/node": "^14.0.27",
+    "@types/readline-sync": "^1.4.3",
+    "prettier": "^2.0.5",
+    "prettier-plugin-solidity": "^1.0.0-alpha.54",
+    "solhint": "^3.0.0",
+    "typescript": "^3.9.7"
+  },
+  "engines": {
+    "node": "14.15.*"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^3.3.0",
+    "@openzeppelin/upgrades": "^2.8.0",
+    "bn.js": "^4.11.0",
+    "dotenv": "^8.2.0",
+    "readline-sync": "^1.4.10",
+    "ts-node": "^8.10.2"
+  },
+  "scripts": {
+    "deploy": "ts-node src/deploy.ts",
+    "compile": "oz compile --optimizer on",
+    "sync-core-contracts": "bash sync-contracts.sh"
+  }
+}
