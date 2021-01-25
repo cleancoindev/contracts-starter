@@ -66,7 +66,7 @@ const deployContract = async (): Promise<string> => {
   const address = await exec(
     `oz deploy Contract -k upgradeable -n xdai --no-interactive`
   );
-  console.log(`Contract deployed to ${address}.`);
+  console.log(`Contract deployed to ${address}`);
   return address ;
 };
 
